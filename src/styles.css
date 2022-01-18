@@ -69,11 +69,13 @@ h1 {
 }
 .location-retrieval {
   margin: 1px;
-  max-width: 10%;
+  padding: 10px;
+  width: 30px;
 }
 .source-link {
   text-decoration: none;
-  font-size: 5px;
+  color: #4eae53;
+  font-size: 10px;
   display: block;
   margin: 0 auto;
 }
