@@ -71,3 +71,6 @@ h1 {
   margin: 1px;
   max-width: 10%;
 }
+.source-link {
+  font-size: 10px;
+}
