@@ -37,6 +37,8 @@ function displayTemperature(response) {
   document.querySelector("#degree").innerHTML = Math.round(
     response.data.main.temp
   );
+  document.querySelector("#weather-description").innerHTML =
+    response.data.weather.main;
 }
 function searchTemperature(event) {
   event.preventDefault();
