@@ -39,7 +39,7 @@ function displayTemperature(response) {
   );
   document.querySelector(
     "#weather-description"
-  ).innerHTML = `weather: ${response.data.weather.main}`;
+  ).innerHTML = `weather: ${response.data.temp}`;
 }
 function searchTemperature(event) {
   event.preventDefault();
