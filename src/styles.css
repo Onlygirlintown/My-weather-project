@@ -1,16 +1,13 @@
 .container {
   padding: 25px;
-  background: #ffedd4;
-  max-width: 70%;
+  max-width: 60%;
   display: block;
   margin: 60px auto;
   border-radius: 3%;
-  color: #4eae53;
+  color: #ffad60;
+  background: #efefbb;
+
   font-family: "Karla", sans-serif;
-}
-.header {
-  text-align: center;
-  color: #4eae53;
 }
 .current-day {
   text-align: center;
@@ -19,28 +16,28 @@
   display: block;
 }
 h1 {
-  background: #ffedd4;
+  background: transparent;
   border: none;
-  color: #4eae53;
-  font-size: 60px;
+  color: #d9534f;
+  font-size: 200px;
   text-align: center;
-  max-width: 80%;
 }
 .city-input {
-  background: #ffedd4;
+  background: transparent;
   border: none;
-  color: #4eae53;
+  color: #ffad60;
   font-size: 10px;
   text-align: center;
-  margin: 10px auto;
-  max-width: 80%;
+  outline: 0;
+  -webkit-box-shadow: none;
+  box-shadow: none;
 }
 .city-submit-button {
-  background: #ffedd4;
+  background: transparent;
   font-size: 7px;
   border-radius: 50%;
-  color: #4eae53;
-  border-color: #4eae53;
+  color: #ffad60;
+  border-color: #ffad60;
 }
 .city-input:hover {
   cursor: pointer;
@@ -49,15 +46,19 @@ h1 {
 .current-day-temperature {
   font-weight: 800;
   font-size: 37px;
+  display: block;
+  margin: 0 auto;
 }
 .current-weekday {
   font-weight: 800;
   font-size: 30px;
+  color: #d9534f;
 }
 .days {
   font-weight: 800;
   line-height: 3;
   font-size: 15px;
+  color: #d9534f;
 }
 .current-weekday-stats {
   line-height: 1;
@@ -65,17 +66,31 @@ h1 {
 .degrees {
   text-decoration: none;
   font-size: 15px;
-  color: #4eae53;
+  color: #ffad60;
 }
 .location-retrieval-element {
   margin: 1px;
-  padding: 5px;
-  width: 10px;
+  padding: 1px;
+  border-radius: 10px;
+  background: transparent;
+  max-width: 10%;
 }
 .source-link {
   text-decoration: none;
-  color: #4eae53;
+  color: #ffad60;
   font-size: 10px;
+  margin: auto;
+  display: block;
+}
+li {
+  list-style-type: none;
+  display: block;
+  margin: 0 auto;
+}
+.degree-units {
+  text-align: center;
+}
+.mini-header {
   display: block;
   margin: 0 auto;
 }

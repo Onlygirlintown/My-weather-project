@@ -21,8 +21,8 @@
 
   <body>
     <div class="container">
-      <div class="row">
-        <form class="header" id="city-form">
+      <div class="mini-header">
+        <form class="search-form" id="city-form">
           <input
             type="text"
             class="city-input"
@@ -31,58 +31,77 @@
           />
           <input type="submit" class="city-submit-button" id="city-submit" />
         </form>
-        <button class="location-retrieval-element" id="location-retrieval">📍</button>
-        <h1>CITY</h1>
+        <button
+          class="location-retrieval-element"
+          id="location-retrieval"
+        >
+          📍
+        </button>
       </div>
+      <h1>San Diego</h1>
       <div class="row">
         <div class="col-6 current-day">
-          <a href="" class="degrees" id="degree-farhenheit">F</a>
-          <a href="" class="degrees" id="degree-celsius">C</a>
-          <div class="current-day current-day-temperature" id="degree">70°</div>
-          <div class="current-day-forecast">
-            <img src="images/sunimage.png" alt="sun emoji" width="100" />
-          </div>
-          <div class="current-day current-weekday" id="day-of-week">Sunday</div>
-          <div class="current-day current-weekday-stats" id="time-of-day">
-            4:00PM
-          </div>
-          <div class="current-day current-weekday-stats" id="weather-description">weather</div>
-          <div class="current-day current-weekday-stats">sunset:</div>
-          <div class="current-day current-weekday-stats">
-            water temperature:
-          </div>
+          <div class="row">
+            <span class="degree-units">
+              <a href="" class="degrees" id="degree-farhenheit">F</a>
+              <a href="" class="degrees" id="degree-celsius">C</a>
+            </span>
+            <div class="current-day current-day-temperature" id="degree">70°</div>
+            </div>
+            <li class=""><img src="" id="icon" alt="sun emoji" width="100" /></li>
+            <li class="current-day current-weekday" id="day-of-week">Sunday</li>
+            <li class="current-day current-weekday-stats" id="time-of-day">
+              4:00PM
+            </li>
+            <li
+              class="current-day current-weekday-stats"
+              id="weather-description"
+            >
+              weather
+            </li>
+            <li class="current-day current-weekday-stats" id="wind-element">
+              wind:
+            </li>
+            <li class="current-day current-weekday-stats">sunset:</li>
+          </ul>
         </div>
         <div class="col-6 current-day">
-          <div class="row forecast-day">
-            <div class="col days">DAY 1</div>
-            <div class="col">weather</div>
-            <div class="col">high/low</div>
-          </div>
-          <div class="row forecast-day">
-            <div class="col days">DAY 2</div>
-            <div class="col">weather</div>
-            <div class="col">high/low</div>
-          </div>
-          <div class="row forecast-day">
-            <div class="col days">DAY 3</div>
-            <div class="col">weather</div>
-            <div class="col">high/low</div>
-          </div>
-          <div class="row forecast-day">
-            <div class="col days">DAY 4</div>
-            <div class="col">weather</div>
-            <div class="col">high/low</div>
-          </div>
-          <div class="row forecast-day">
-            <div class="col days">DAY 5</div>
-            <div class="col">weather</div>
-            <div class="col">high/low</div>
-          </div>
+          <ul>
+            <li class="row forecast-day">
+              <span class="col days">DAY 1</span>
+              <span class="col">weather</span>
+              <span class="col">high/low</span>
+            </li>
+            <li class="row forecast-day">
+              <span class="col days">DAY 2</span>
+              <span class="col">weather</span>
+              <span class="col">high/low</span>
+            </li>
+            <li class="row forecast-day">
+              <span class="col days">DAY 3</span>
+              <span class="col">weather</span>
+              <span class="col">high/low</span>
+            </li>
+            <li class="row forecast-day">
+              <span class="col days">DAY 4</span>
+              <span class="col">weather</span>
+              <span class="col">high/low</span>
+            </li>
+            <li class="row forecast-day">
+              <span class="col days">DAY 5</span>
+              <span class="col">weather</span>
+              <span class="col">high/low</span>
+            </li>
+          </ul>
         </div>
       </div>
-    <a href="https://github.com/Onlygirlintown/My-weather-project" target="_blank" class="source-link">Open Source Code by Alexandra Chitacapa</a>
     </div>
-    </body>
+    <a
+      href="https://github.com/Onlygirlintown/My-weather-project"
+      target="_blank"
+      class="source-link"
+      >Open Source Code by Alexandra Chitacapa</a
+    >
 
     <script src="src/index.js" target="_blank"></script>
   </body>

@@ -27,20 +27,31 @@ weekDay.innerHTML = `${day}`;
 function degreeConversion(event) {
   event.preventDefault();
   let temperatureElement = document.querySelector("#degree");
-  temperatureElement.innerHTML = ((temperatureElement - 32) * 5) / 9;
+  temperatureElement.innerHTML = `${((temperatureElement - 32) * 5) / 9}°`;
 }
 
 let degreeChange = document.querySelector("#degree-celsius");
 degreeChange.addEventListener("click", degreeConversion);
 
 function displayTemperature(response) {
-  document.querySelector("#degree").innerHTML = Math.round(
+  document.querySelector("#degree").innerHTML = ` ${Math.round(
     response.data.main.temp
-  );
+  )}°`;
   document.querySelector(
     "#weather-description"
-  ).innerHTML = `weather: ${response.data.temp}`;
+  ).innerHTML = `weather: ${response.data.weather[0].description}`;
+  document.querySelector("#wind-element").innerHTML = `wind speed: ${Math.round(
+    response.data.wind.speed
+  )} mph`;
+
+  document
+    .querySelector("#icon")
+    .setAttribute(
+      "src",
+      `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
+    );
 }
+
 function searchTemperature(event) {
   event.preventDefault();
   let urlRoot = "https://api.openweathermap.org/data/2.5/weather?q=";
@@ -50,6 +61,7 @@ function searchTemperature(event) {
   h1.innerHTML = `${cityName.value}`;
   let units = "imperial";
   let apiUrl = `${urlRoot}${cityName.value}&appid=${apiKey}&units=${units}`;
+  console.log(apiUrl);
   axios.get(apiUrl).then(displayTemperature);
 }
 
