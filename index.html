@@ -29,21 +29,21 @@
             placeholder="TYPE CITY HERE"
             id="city-search-input"
           />
-          <input type="submit" class="city-submit-button" id="city-submit" />
-        </form>
-        <button
+          <input type="submit" class="city-submit-button" id="city-submit" value="✔" />
+         <button
           class="location-retrieval-element"
           id="location-retrieval"
+          type=button
         >
           📍
         </button>
+      </form>
       </div>
       <h1>San Diego</h1>
       <div class="row">
         <div class="col-6 current-day">
           <div class="row">
             <span class="degree-units">
-              <a href="" class="degrees" id="degree-farhenheit">F</a>
               <a href="" class="degrees" id="degree-celsius">C</a>
             </span>
             <div class="current-day current-day-temperature" id="degree">70°</div>
@@ -65,34 +65,35 @@
             <li class="current-day current-weekday-stats">sunset:</li>
           </ul>
         </div>
-        <div class="col-6 current-day">
-          <ul>
-            <li class="row forecast-day">
-              <span class="col days">DAY 1</span>
+        <div class="col-6 current-day" id="week-forecast">
+          
+            <li class="row forecast-days">
+              <span class="col days" id="days">DAY 1</span>
               <span class="col">weather</span>
-              <span class="col">high/low</span>
+              <span class="col forecast-temp-max">high</span>
+              <span class="col forecast-temp-min">low</span>
             </li>
-            <li class="row forecast-day">
-              <span class="col days">DAY 2</span>
+            <li class="row forecast-days" id="week-forecast">
+              <span class="col days" id="days">DAY 1</span>
               <span class="col">weather</span>
-              <span class="col">high/low</span>
-            </li>
-            <li class="row forecast-day">
-              <span class="col days">DAY 3</span>
+              <span class="col forecast-temp-max">high</span>
+              <span class="col forecast-temp-min">low</span>
+              <li class="row forecast-days" id="week-forecast">
+              <span class="col days" id="days">DAY 1</span>
               <span class="col">weather</span>
-              <span class="col">high/low</span>
-            </li>
-            <li class="row forecast-day">
-              <span class="col days">DAY 4</span>
+              <span class="col forecast-temp-max">high</span>
+              <span class="col forecast-temp-min">low</span>
+              <li class="row forecast-days" id="week-forecast">
+              <span class="col days" id="days">DAY 1</span>
               <span class="col">weather</span>
-              <span class="col">high/low</span>
-            </li>
-            <li class="row forecast-day">
-              <span class="col days">DAY 5</span>
+              <span class="col forecast-temp-max">high</span>
+              <span class="col forecast-temp-min">low</span>
+              <li class="row forecast-days" id="week-forecast">
+              <span class="col days" id="days">DAY 1</span>
               <span class="col">weather</span>
-              <span class="col">high/low</span>
-            </li>
-          </ul>
+              <span class="col forecast-temp-max">high</span>
+              <span class="col forecast-temp-min">low</span>
+        
         </div>
       </div>
     </div>

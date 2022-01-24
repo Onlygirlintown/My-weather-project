@@ -34,7 +34,7 @@ h1 {
 }
 .city-submit-button {
   background: transparent;
-  font-size: 7px;
+  font-size: 8px;
   border-radius: 50%;
   color: #ffad60;
   border-color: #ffad60;
@@ -69,18 +69,17 @@ h1 {
   color: #ffad60;
 }
 .location-retrieval-element {
-  margin: 1px;
-  padding: 1px;
-  border-radius: 10px;
+  border-radius: 50%;
   background: transparent;
-  max-width: 10%;
+  font-size: 8px;
+  color: #ffad60;
+  border-color: #ffad60;
 }
 .source-link {
   text-decoration: none;
   color: #ffad60;
   font-size: 10px;
-  margin: auto;
-  display: block;
+  text-align: center;
 }
 li {
   list-style-type: none;
@@ -91,6 +90,5 @@ li {
   text-align: center;
 }
 .mini-header {
-  display: block;
-  margin: 0 auto;
+  text-align: center;
 }
