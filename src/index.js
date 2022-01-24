@@ -47,7 +47,7 @@ function displayForecast(response) {
   let forecastHtml = "";
 
   forecast.forEach(function (forecastDay, index) {
-    if (index < 5) {
+    if (index > 0 && index < 6) {
       forecastHtml =
         forecastHtml +
         `
@@ -77,9 +77,10 @@ function getForecast(coord) {
 }
 
 function displayTemperature(response) {
+  console.log(response);
   document.querySelector("#degree").innerHTML = ` ${Math.round(
     response.data.main.temp
-  )}°`;
+  )}° F`;
 
   document.querySelector(
     "#weather-description"

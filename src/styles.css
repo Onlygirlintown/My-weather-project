@@ -2,11 +2,11 @@
   padding: 10px;
   display: block;
   margin-top: 6%;
-  border-radius: 3%;
+  border-radius: 30px;
   color: #ffad60;
   background: #efefbb;
-
   font-family: "Karla", sans-serif;
+  box-shadow: 12px 12px 2px 1px rgb(253, 242, 227);
 }
 .current-day {
   text-align: center;
@@ -21,6 +21,7 @@ h1 {
   font-size: 200px;
   text-align: center;
   text-transform: uppercase;
+  text-shadow: #ffad60 1px 0 10px;
 }
 .city-input {
   background: transparent;
@@ -90,5 +91,8 @@ li {
   text-align: center;
 }
 .mini-header {
+  text-align: center;
+}
+.codelink {
   text-align: center;
 }
