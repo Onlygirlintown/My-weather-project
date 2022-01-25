@@ -77,7 +77,6 @@ function getForecast(coord) {
 }
 
 function displayTemperature(response) {
-  console.log(response);
   document.querySelector("#degree").innerHTML = ` ${Math.round(
     response.data.main.temp
   )}° F`;
